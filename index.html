@@ -39,14 +39,14 @@
 
   <div id="sidebar">
 
-  <!-- side bar  -->
+    <!-- side bar  -->
     <div class="toggle-btn" onclick="toggleSidebar()">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-  <!-- Right side  -->
+    <!-- Right side  -->
     <ul>
       <li>Home</li>
       <li>About</li>
@@ -54,20 +54,20 @@
     </ul>
   </div>
 
-<!-- QR Code  -->
-<div class="QR">
-  <h1>Your QR Code is Here</h1>
-  <button type="btn btn-danger btn-lg" name="button" onclick="generateQR();">Generate QR</button>
-  <p></p>
+  <!-- QR Code  -->
+  <div class="QR">
+    <h1>Your QR Code is Here</h1>
+    <button type="btn btn-danger btn-lg" name="button" onclick="generateQR();">Generate QR</button>
+    <p></p>
     <div id="qr">
     </div>
-</div>
+  </div>
 </body>
 <script>
-var qrcode=new QRCode(document.getElementById('qr'));
-  function generateQR()
-  {
-    var data="https://www.google.com/";
+  var qrcode = new QRCode(document.getElementById('qr'));
+
+  function generateQR() {
+    var data = "https://www.google.com/";
     qrcode.makeCode(data);
   }
 </script>
