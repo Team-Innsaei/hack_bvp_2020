@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<div class="">
+  <h1>exit</h1>
+  <form action="/exit" method="post">
+    <input type="email" name="username" placeholder="Username">
+    <input type="number" name="token" placeholder="Token">
+    <input type="number" name="otp" placeholder="OTP">
+    <button class="btn btn-lg btn-dark" type="submit" name="button">Exit</button>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
