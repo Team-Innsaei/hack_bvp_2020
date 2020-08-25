@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+  <div>
+    <h1>Settings</h1>
+    <form action="/setLimit" method="post">
+      <input type="number" name="maxCustomers" placeholder="Maximum limit">
+      <hr>
+      <button class="btn btn-lg btn-dark" type="submit" name="button">Set Limit</button>
+    </form>
+    <hr>
+    <form action="/reset" method="post">
+      <hr>
+      <button class="btn btn-lg btn-dark" type="submit" name="reset">Reset</button>
+    </form>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/dashboard" role="button">Dashboard</a>
+  </div>
+<%- include('partials/footer') %>
